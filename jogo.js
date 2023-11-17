@@ -11,14 +11,14 @@ let jogoAcabou = false;
 
 document.addEventListener("click", (event) =>  {
     if (event.target.matches(".celula") && !jogoAcabou) {
-        !jogar(event.target.id);
+        jogar(event.target.id);
     }
     
 });
 
 function jogar(id) {
 
-    const celula = document.getelementbyid(id);
+    const celula = document.getElementbyid(id);
     if (celula.textContent === "") {
         turno = checarTurno ? JOGADOR_X : JOGADOR_0
         checarTurno = !checarTurno;
