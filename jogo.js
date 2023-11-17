@@ -24,7 +24,7 @@ function jogar(id) {
         checarTurno = !checarTurno;
         celula.textContent = turno;
         celula.classList.add(turno);
-        celula.removeEventLitener("click", jogar );
+        celula.removeEventListener("click", jogar );
         verificarVencedor(turno);
     }
 }
